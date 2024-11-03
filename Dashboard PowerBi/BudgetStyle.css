@@ -1,0 +1,36 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .widget {
+            width: 45%;
+            padding: 20px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .widget {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
