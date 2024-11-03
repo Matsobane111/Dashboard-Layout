@@ -1,0 +1,68 @@
+/* Styling for Layout.html */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+	background-color:grey;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-title {
+    margin-left: 20px;
+}
+
+/* Container styling */
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color:grey;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.widget:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .widget {
+        width: 80%;
+        max-width: 300px;
+    }
+}
